@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Праздники народов мира</title>
+
+        <style>
+
+            body {
+                font-size: 20px;
+            }
+            
+            h1 {
+                color: #800080;
+                text-align: center;
+            }
+
+            p {
+                border: 2px solid purple;
+            }
+
+            img {
+                border: 10px solid lightblue;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Праздники народов мира</h1>
+        <p>Китайский праздник льда и снега отмечается ежегодно с пятого января по пятое февраля. Мастера со всего света съезжаются для участия в конкурсе по созданию холодных скульптур, которые украшают подсветкой.</p>
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.etoday.ru%2Fuploads%2F2011%2F01%2F26%2Fharbin_ice_and_snow_festival38.jpg&f=1&nofb=1&ipt=7fa4ae39df16d98d1a37f8ae62c90a2d17c9b159c9f2ab49bf067eeb92bebe7d" width="450">
+    </body>
+    
+</html>
