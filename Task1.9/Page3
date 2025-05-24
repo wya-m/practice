@@ -1,0 +1,90 @@
+<html>
+    <head>
+
+        <style>
+
+            header {
+                background: white;
+                padding:10px;
+                margin: 10px;
+            }
+
+            body {
+                font-family: 'Arial', sans-serif;
+                padding: 20px;
+                background-color: navy;
+                font-size:20px;
+                line-height:1.5;
+            }
+
+            .container {
+                margin: 50;
+                color: navy;
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+            }
+
+            h1 {
+                text-align: center;
+                color: white;
+                font-size: 50px;
+            }
+            
+            h2 {
+                font-size: 30px;
+                font-weight: normal;
+                margin:0;
+            }
+
+            .icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .marker {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <header><img class="icon" src="https://cdn6.aptoide.com/imgs/c/0/0/c000246b3cc3abe774c4bed60eb40abf_icon.png?w=128"> <img src="https://userscontent2.emaze.com/images/0f0d2a05-3dc7-4499-9085-3bf8fa082c2b/9a41bfe803adaaebf04c14d0e0bb3045.png" width="1000" height="50"></header>
+
+        <h1>Design 24/7<img class="icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvsememy.ru%2Fkartinki%2Fwp-content%2Fuploads%2F2023%2F03%2F1661922598_34-papik-pro-p-smailik-v-ochkakh-pokazivaet-klass-png-38.png&f=1&nofb=1&ipt=fcbaed20769d8bdd272f43e6bb498cbf856d2632f55449c10316f9df76a51f96"></h1>
+        
+        <div class="container">
+
+            <h2>Дизайнер, рисую для сайтов:</h2>
+            
+            <div class="services">
+
+                <div class="service-item">
+                    <img class="marker" src="https://cdn-icons-png.flaticon.com/128/16750/16750043.png"> логотипы;
+                </div>
+
+                <div class="service-item">
+                    <img class="marker" src="https://cdn-icons-png.flaticon.com/128/16750/16750043.png"> иконки;
+                </div>
+
+                <div class="service-item">
+                    <img class="marker" src="https://cdn-icons-png.flaticon.com/128/16750/16750043.png"> коллажи.
+                </div>
+
+            </div>
+
+            <img style="display: flex; margin: auto;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fabrakadabra.fun%2Fuploads%2Fposts%2F2021-12%2F1639025996_63-abrakadabra-fun-p-klyaksa-vektor-png-64.png&f=1&nofb=1&ipt=e16cc1e83efb53f26ae67e24122e763683a485dbe765f04d1535439a7319f213" width="900" height="400">
+        </div>
+
+        <div width="125">
+        
+        <a href=""><img class="icon" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2Fgithub%2Fgithub_PNG80.png&f=1&nofb=1&ipt=992c9f592e7715ae59b0e237fffbbd81c6b55a8d8f65a31d44ee0f66d68c9cb6"></a>
+
+        <a href=""><img class="icon" src="https://cdn-icons-png.flaticon.com/32/2111/2111646.png"></a></div>
+
+    </body>
+
+</html>
