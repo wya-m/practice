@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <style>
+
+            header {
+                background: darkblue; 
+                display: flex;
+                align-items: center; 
+                padding: 10px 20px;
+                height: 80px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            
+            header img {
+                height: 50px;
+                margin-right: 15px;
+            }
+
+            header p { 
+                font-family: "Arial";
+                font-size: 20px; 
+                color: white; 
+                display: flex; 
+                align-items: center;
+                margin: 0;
+            }
+
+            header p b {
+                margin-right: 10px; 
+            }
+            
+            header p a { 
+                color: white;
+                text-decoration: none;
+                border: 1px solid white;
+                padding: 5px 10px;
+                border-radius: 3px;
+                font-size: 20px; 
+            }
+
+            header p a:hover {
+                background-color: white;
+                color: darkblue;
+            }
+
+            main {
+                padding: 20px; 
+            }
+            
+            main h1 {
+                font-size: 40px;
+                font-weight: bold;
+                color: blue; 
+                text-align: center;
+                font-family: "Arial";
+                font-style: normal; 
+                margin-bottom: 30px; 
+            }
+
+            footer {
+                background-color: #2E8B57; 
+                padding: 20px; 
+                color: white;
+            }
+
+            footer p {
+                background-color: transparent; 
+                padding: 5px 0;
+                font-family: "Arial";
+                font-size: 20px; 
+                color: white; 
+                margin: 5px 0; 
+            }
+
+            footer p b {
+                color: white; 
+            }
+
+            body {
+                margin: 0;
+                font-family: "Arial";
+            }
+            
+            nav {
+                background: #006400;
+                padding: 15px 20px;
+                display: flex;
+                justify-content: space-around;
+                box-shadow: none; 
+                border: none; 
+            }
+            
+            nav a { 
+                font-family: "Arial";
+                font-size: 20px; 
+                color: white; 
+                text-decoration: none;
+                padding: 5px 10px; 
+            }
+            
+            nav a:hover {
+                color: white; 
+                text-decoration: underline;
+            }
+
+            form {
+                font-family: "Arial";
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                margin-bottom: 30px; 
+            }
+            
+            form label {
+                font-size: 20px; 
+                margin-right: 10px;
+                color: #333;
+            }
+
+            .rounded-box {
+                background-color: #90EE90; 
+                border-radius: 15px; 
+                padding: 20px; 
+                display: flex; 
+                align-items: center;
+                margin: 20px 0;
+                font-family: Arial;
+                line-height: 1.5;
+                text-align: left;
+                box-sizing: border-box;
+                color: black; 
+            }
+            
+            .rounded-box img { 
+                width: 100px; 
+                height: auto;
+                margin-right: 20px;
+            }
+
+            .rounded-box p {
+                font-size: 25px; 
+                margin: 0; 
+            }
+
+            .section { 
+                margin-bottom: 30px;
+            }
+
+            .section h1 {
+                font-family: "Arial";
+                color: blue; 
+                font-size: 28px; 
+                text-align: left; 
+                margin-top: 30px; 
+                margin-bottom: 15px; 
+            }
+
+            button {
+                font-family: "Arial";
+                border: 2px solid blue; 
+                font-size: 20px; 
+                color: blue;
+                background-color: white;
+                padding: 8px 15px; 
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #eef2ff; 
+            }
+
+            section p {
+                color: whitesmoke;
+            }
+
+            .section p {
+                font-family: "Arial";
+                font-size: 20px; 
+                line-height: 1.6; 
+                color: #333; 
+            }
+
+            .section img { 
+                height: auto;
+                display: block; 
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="https://avatars.mds.yandex.net/i?id=c72272ce1b724f5d26dfa8b494a470d187c08425-4825378-images-thumbs&n=13" alt="logo">
+            <p><b>Внимание! Сезонные скидки 40%</b> <a href="#season">Подробнее</a></p>
+        </header>
+
+        <nav>
+            <a href="#products">Продукция</a>
+            <a href="#how-to-buy">Как купить?</a>
+            <a href="#wholesale">Оптом</a>
+            <a href="#about">О компании</a>
+        </nav>
+
+        <main>
+
+            <h1>Fantastic Party</h1>
+
+            <div> 
+                <form>
+                    <label for="city">Выберите город для доставки:</label>
+                    <select id="city" name="city">
+                        <option value="Barnaul">Барнаул</option>
+                        <option value="Novosibirsk">Новосибирск</option>
+                        <option value="Moscow">Москва</option>
+                        <option value="Saint-Petersburg">Санкт-Петербург</option>
+                        <option value="Kazan">Казань</option>
+                    </select>
+                </form>
+            </div>
+
+            <section id="products">
+
+                <div class="rounded-box">
+                    <img src="https://avatars.mds.yandex.net/i?id=f3297a2c0a89be1771c9286152b3422cfce9ecbe-7000229-images-thumbs&n=13" alt="Хлопушки">
+                    <p>Хлопушки</p>
+                </div>
+
+                <div class="rounded-box">
+                    <img src="https://avatars.mds.yandex.net/i?id=28ded3b4d4e131c419564b3bc64b94f5e78df0d1-4568533-images-thumbs&n=13" alt="Петарды">
+                    <p>Петарды</p>
+                </div>
+                
+                <div class="rounded-box">
+                    <img src="https://avatars.mds.yandex.net/i?id=caa5bb1acadd6f18dd8b5d4342c8fad617305def-8168927-images-thumbs&n=13" alt="Фонтаны">
+                    <p>Фонтаны</p>
+                </div>
+
+                <div class="rounded-box">
+                    <img src="https://avatars.mds.yandex.net/i?id=6d2e78f61e9fed26c15f22cdb9f5ee4e_l-6371016-images-thumbs&n=13" alt="Фестивальные шары">
+                    <p>Фестивальные шары</p>
+                </div>
+                
+            </section>
+
+            <section id="season" class="section">
+                <h1>Сезонное предложение</h1>
+                <p>С 5 декабря по 5 марта действует предложение: скидка на всю продукцию 40%.</p>
+                <p><b><i>Спешите купить праздник выгодно!</i></b></p>
+                <img src="https://avatars.mds.yandex.net/i?id=095b581b5cdb477aa6b0056a201296515ca742d9-5267897-images-thumbs&n=13" width="400" alt="Сезонное предложение">
+            </section>
+
+            <section id="how-to-buy" class="section">
+                <h1>Как приобрести?</h1>
+                <button onclick="document.querySelector('footer').scrollIntoView({behavior: 'smooth'})">Контакты</button>
+                <p>Вы можете сделать заказ по телефону или приобрести товары в магазине.</p>
+                <p>В магазине вас ждёт подробный рассказ о нашей продукции.</p>
+                <p>При посещении магазина можно заказать доставку на дом/в офис.</p>
+                <p>Вы также можете по телефону сделать предзаказ для резервирования товаров в магазине.</p>
+                <img src="https://play-lh.googleusercontent.com/rVklta3rws59fwj_TdGP4lBitgwZA0xxyUJLrlIB6Y_pS5c30RJs3AzwHvMrFZ_Uowc" alt="Тележка" width="200">
+            </section>
+
+            <section id="wholesale" class="section">
+                <h1>Оптом</h1>
+                <p>От 100 000₽ - скидка 45%</p>
+                <p>От 200 000₽ - скидка 50%</p>
+                <img src="https://static.tildacdn.info/tild3938-3163-4339-a464-363938323933/Group_11.png" width="200" alt="Спец. предложение">
+            </section>
+
+            <section id="about" class="section">
+                <h1>О компании</h1>
+                <p>Наша история началась с магазина, открывшегося в 2005 году. Тогда мы предлагали только хлопушки.</p>
+                <p>В 2015 году у нас появился сайт, а ассортимент пополнился новыми видами товаров.</p>
+                <img src="https://avatars.mds.yandex.net/i?id=d5978b9e375f48e5caeb2cba43c4612c-4600873-images-thumbs&n=13" width="200" alt="Фото компании">
+                <a href="" style="border: 1px solid blue; padding: 5px; border-radius: 7px; color: blue;">Наверх</a>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p><b>Контакты</b></p>
+            <p>Адрес: г. Звёздный, пр-кт. Экспериментальный, 21</p>
+            <p>Тел.: 2502-3716</p>
+        </footer>
+        
+    </body>
+
+</html>
