@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Дельфинарий приглашает</title>
+
+        <style>
+
+            h1 {
+                color: blue;
+                font-size: 50px;
+                margin: 20px;
+                text-align: center;
+                font-family: "Arial";
+            }
+
+            img {
+                height: 200px;
+            }
+
+            .second_img {
+                height: 200px;
+                border: 10px solid blueviolet;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Дельфинарий приглашает</h1>
+
+        <div>
+            <img style="margin-right: 15px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.tourister.ru%2Ffiles%2F1%2F7%2F9%2F7%2F2%2F5%2F4%2F5%2Foriginal.jpg&f=1&nofb=1&ipt=ccdb18cc11a8232849c720487b4f589103b25bc665508b047777df77761c323c"> 
+            <img class="second_img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkidpassage.com%2Fimages%2Factivity%2Fdelfinariy-v-batumi%2Fdelfinariy-v-batumi-photo1_1574001748.jpg&f=1&nofb=1&ipt=be4607566afa25734ebbd6a2d00523034d80e58fa504966fd8f1ba8a579ee5f2"> 
+            <img style="margin-left: 15px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fafishakids.ru%2Fupload%2Fiblock%2Fb80%2Fafishakids-delfinarij.jpg&f=1&nofb=1&ipt=7cf2ec2916b53a25424c5100821a6df73479df157c7a4410d5d1f477259cc3ec">
+        </div>
+
+    </body>
+
+</html>
