@@ -1,0 +1,23 @@
+<html>
+    <title>Шахматы онлайн</title>
+
+    <head>
+
+        <style>
+
+            h1, p {
+                font-family: "Arial";
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Шахматы online <img src="https://cdn-icons-png.flaticon.com/32/658/658098.png"></h1>
+        <p>Приглашаем принять участие в турнире, который проходит каждую третью субботу месяца в 13.00.</p>
+        <p>Победителям — купоны на покупки в интернет-магазинах.</p>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fraskrasdetstvo.com%2Fupload%2Fiblock%2F663%2F663430b5e893ee6143de69551cc8bc79.jpg&f=1&nofb=1&ipt=200becaeee1f19c21b723fc5ec597738da2b6bc86bb1cfb7931e227344275a99"  width="200" height="200">
+    </body>
+
+</html>
