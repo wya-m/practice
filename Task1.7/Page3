@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Computer Market</title>
+
+        <style>
+
+            header {
+                background-color: burlywood;
+            }
+
+            header p {
+                background-color: white;
+                color: blue;
+            }
+
+            header h1 {
+                background-color: white;
+            }
+
+            main {
+                background: #f7ec7fff;
+            }
+
+            footer {
+                background-color: peru;
+                color: white;
+                font-family: 'Arial';
+            }
+
+            footer p {
+                background-color: white;
+                color: blue;
+            }
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+
+            h1 img {
+                width: 150px;
+                height: 150px;
+            }
+
+            p img {
+                width: 100px;
+                height: 100px;
+            }
+
+            body, main {
+                font-family: 'Arial';
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="https://cdn-icons-png.flaticon.com/512/689/689355.png" alt="logo">
+            <p>Сделай покупку до нового года, получи подарок!</p>
+        </header>
+
+        <main>
+            <h1 style="text-align: center;">Computer Market <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fsale-transparent-background%2Fsale-transparent-background-2.png&f=1&nofb=1&ipt=72b591c735123c21aa587f3ab91d2e849ec5e986638ec4d707afa551d8b17798" width="250" style="margin-top: -40;"></h2>
+            
+            <p>Решили приобрести компьютер или планшет? Торопитесь, в декабре у нас скидки!</p>
+
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.-quGE5cEMqVRdl6i20GOggHaHa%26cb%3Diwc2%26pid%3DApi&f=1&ipt=3cba233a8760e16cf2f77d9ca4baeb69dd9c515faf68f0532b43a885a0007a9e&ipo=images" width="70">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmicroless.com%2Fcdn%2Fproducts%2Ff026b0f0fb6302d095eda73e25215408-hi.jpg&f=1&nofb=1&ipt=d481e4f41c2b131a071fd2032ee76deda46855e3376308d35b0c28e170f99155" width="70">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F71Mt4JAZQtL.jpg&f=1&nofb=1&ipt=6b86c03eaaaeadf9e06807f3c53c41e420fd256c888f8b5dc12ac279d8ec3cd1" width="70">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngteam.com%2Fimages%2Fcomputer-pc-png-2400x1806_44a563a0_transparent_202b22.png.png&f=1&nofb=1&ipt=591730ab9257146b4fabbe6d0ec389acacc0eea0b7b8a101ae5b422213a6c53a" width="70">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore.storeimages.cdn-apple.com%2F4982%2Fas-images.apple.com%2Fis%2FMQTP3%3Fwid%3D1144%26hei%3D1144%26fmt%3Djpeg%26qlt%3D90%26.v%3D1687660671182&f=1&nofb=1&ipt=4d2d1e9a69f1749cc795939e96a4298c02fd11d8f0ec4def1bb21efef699f857" width="70">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F61YQeAUIboL._AC_SL1500_.jpg&f=1&nofb=1&ipt=13a39f24e840807b773714d07fa62ff7a408afdf3d968be1a41750111fcf2291" width="70">
+        </main>
+
+        <footer>
+            <p><span style="font-weight: bold; font-style: italic;">Контакты</span></p>
+            <p>Адрес: г. Техноград, ул. Дисплейная, 15</p>
+            <p>Тел.: 8895-6341</p>
+        </footer>
+
+    </body>
+
+</html>
