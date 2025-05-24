@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Кафе "Волшебные сладости"</title>
+    </head>
+    <body>
+        <h1 style="color: darkblue;">Кафе "Волшебные сладости"</h1>
+        <p style="color: purple;">Планируете позвать друзей в гости? - Закажите сладости у нас!</p>
+
+        <p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs0.rbk.ru%2Fv6_top_pics%2Fmedia%2Fimg%2F4%2F27%2F756811062902274.webp&f=1&nofb=1&ipt=609babf174e398b793a9e6317e22bf08f12615aa54986e251927d4ee9d2ff603" width="180"; height="180">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatars.dzeninfra.ru%2Fget-zen_doc%2F3731867%2Fpub_621a42c97f7fb40fde6dcfdb_621a4322f8bf1248f2273aa5%2Fscale_1200&f=1&nofb=1&ipt=9fdfd19c58f1b22c797dfced00cf652d954ac349deb2e1215dea864e1bae1521" width="180"; height="180">
+        </p>
+
+        <p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F510000%2Fnahled%2Fchocolate-and-sweets-1683637202Yn5.jpg&f=1&nofb=1&ipt=fac444f0ccbb8752116f80bb52e4aa56acf3e900becfa6db27305239517d0b54" width="180"; height="180">
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.raceroster.com%2Faccount_photos%2F2016-08-15_20-16-45_team_57b25b64277d0.jpg&f=1&nofb=1&ipt=374bbbb18118262fd00a7b5456aec672b64b19f18fc30f47658f3bab291eed18" width="180"; height="180">
+        </p>
+
+        <a href="https://m-catering.ru/blog/originalnye-idei-dlya-detskogo-prazdnika/" style="color: green;">
+        Идеи для детских празников
+        </a>
+    </body>
+</html>
