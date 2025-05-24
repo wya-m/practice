@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Турнир по киберспорту</title>
+    </head>
+    <body>
+        <h1>Турнир по киберспорту</h1>
+
+        <table style="border: 1px solid #8a8a8a; border-collapse: collapse;">
+            <tr style="background-color: #808000; color: white; border: 1px solid #8a8a8a;">
+                <td>Игра</td>
+                <td>Команда 1</td>
+                <td>Команда 2</td>
+                <td>Дата</td>
+                <td>Счёт</td>
+            </tr>
+            <tr>
+                <td style="background-color: #808000; color: white; border: 1px solid #8a8a8a;">Warface</td>
+                <td style="background-color: #deb887; border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/6142/6142078.png">Legion</td>
+                <td style="border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/599/599502.png">Fire Master</td>
+                <td style="background-color: #deb887; border: 1px solid #8a8a8a;">11.11.2020</td>
+                <td style="border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/934/934478.png">2 : 0</td>
+            </tr>
+            <tr>
+                <td style="background-color: #808000; color: white; border: 1px solid #8a8a8a;">CrossFire</td>
+                <td style="background-color: #deb887; border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/7445/7445469.png">Wind of War</td>
+                <td style="border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/6142/6142078.png">Legion</td>
+                <td style="background-color: #deb887; border: 1px solid #8a8a8a;">22.11.2020</td>
+                <td style="border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/934/934478.png">2 : 1</td>
+            </tr>
+            <tr>
+                <td style="background-color: #808000; color: white; border: 1px solid #8a8a8a;">CS GO</td>
+                <td style="background-color: #deb887; border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/4133/4133382.png" style="width: 32px; height: 32px;">Demon Strike</td>
+                <td style="border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/7445/7445469.png">Wind of War</td>
+                <td style="background-color: #deb887; border: 1px solid #8a8a8a;">03.12.2020</td>
+                <td style="border: 1px solid #8a8a8a;"><img src="https://cdn-icons-png.flaticon.com/32/934/934478.png">1 : 0</td>
+            </tr>
+        </table>
+    </body>
+</html>
