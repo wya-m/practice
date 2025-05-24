@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Блог о летних каникулах</title>
+    </head>
+    <body>
+        <a href="https://github.com/wya-m">Про автора</a>
+        <h1>Блог о летних каникулах</h1>
+        <p>В это лето я впервые был на море, сбылась моя мечта. <img src="https://cdn-icons-png.flaticon.com/32/4336/4336883.png"></p>
+        <p>Ездили мы всей семьёй на десять дней в Сочи. На берегу моря я нашёл красивые раковины. <img src="https://cdn-icons-png.flaticon.com/32/4792/4792308.png"></p>
+        <p>В Сочи мы пошли в зоопарк и там я видел черепаху. <img src="https://cdn-icons-png.flaticon.com/32/6789/6789466.png"></p>
+        <p>Остальную часть каникул я провёл на даче у бабушки, собирал клубнику. <img src="https://cdn-icons-png.flaticon.com/32/590/590685.png"></p>
+        <p>На дачу ко мне приехал друг <img src="https://cdn-icons-png.flaticon.com/32/3220/3220788.png"> и мы ловили рыбу, играли в настольные игры.</p>
+        <p>Нужно разобрать фотографии в телефоне. <img src="https://cdn-icons-png.flaticon.com/32/2659/2659360.png" style="width: 30px; height: 30px;"></p>
+    </body>
+</html>
