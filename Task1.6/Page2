@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <style>
+
+      body{
+        font-family: 'Arial';
+      }
+
+      p {
+        font-size: 20px;
+        background-color: lightblue;
+      }
+      
+      a {
+        color: black;
+        font-size: 20px;
+        border: 2px solid darkblue;
+        background-color: lightblue;
+      }
+
+      img {
+        border: 2px solid brown;
+      }
+
+      table {
+        background-color: lightblue;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid brown;
+        border-collapse: collapse;
+      }
+
+      td, th {
+        border: 1px solid brown;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      h2 {
+        color: darkblue;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <a href="#timetable">Расписание</a> <a href="#description">О занятиях</a> <a href="#image">Фотографии</a>
+    
+    <h1>Клуб верховой езды</h1>
+
+    <img style="margin: auto; display: block" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fksk-zvezdniy.ru%2Fassets%2Fimages%2FhHzVe6QHLW-450.jpeg&f=1&nofb=1&ipt=7b17dd4419d0d94678305aaa6718fb1fa52091d88252e575579cdd9718d48c0b" width="250">
+
+    <h2 id="description">Как проходят занятия</h2>
+      <p>На занятиях вы будете не только практиковаться в верховой езде, но и узнаете, как ухаживать за лошадьми. Уже на первом занятии сможете покормить животных. Научитесь кормить, поить, мыть и расчёсывать вашего скакуна, будете одевать и снимать сбрую.</p>
+      <p>Тренер вместе с вами подберет вам лошадь, с учётом ваших навыков верховой езды. Вы будете практиковаться верхом на свежем воздухе под контролем тренера, а на более поздних занятиях вас ждёт прогулка по лесу.</p>
+      <p>После окончания курса, по договоренности с клубом, можете приходить на прогулку — навестить своего скакуна, с которым вы обязательно подружитесь.</p>
+    <h2 id="timetable">Расписание</h2>
+
+    <table>
+      <tr>
+        <th>Название<br>программы</th>
+        <th>Время занятий</th>
+      </tr>
+      <tr>
+        <td>Вводный курс</td>
+        <td>Суб. 12-16</td>
+      </tr>
+      <tr>
+        <td>Пони детям</td>
+        <td>Суб. 10-12</td>
+      </tr>
+    </table>
+
+    <h2 id="image">Фотографии</h2>
+
+    <div>
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.toursoyuz.by%2Fwp-content%2Fuploads%2F2023%2F08%2Fgeorge_s-ranch-6.jpg&f=1&nofb=1&ipt=9dd41140405bb9652679d9e2c6facddc7f0e4c269ed393e81fd69617d6c9d4a9" width="300">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmadloba.info%2Fmedia%2Fimages%2FHorse-Riding-Club-Black-Ho.2e16d0ba.fill-2560x1440.mwtmk.jpg&f=1&nofb=1&ipt=6116ddfcb2693e0b966d238baab03b92a56b5c60e40f46139ba50a2ba46f5c61" width="300">
+    </div>
+
+    <div>
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkk-fortuna.ru%2Fwp-content%2Fuploads%2FIMG_6184.jpg&f=1&nofb=1&ipt=2649a7b26bbe6627d6f7b6d1410a9c7daa1d528a00009dd79ffaffb00045c87b" width="300">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Floshadi.info%2Fwp-content%2Fuploads%2F2019%2F01%2F1-80.jpg&f=1&nofb=1&ipt=39c6fba99527a86bf919a9a04a4c57f4346dc822d37165959331234b335921f8" width="300">
+    </div>
+
+  </body>
+
+</html>
