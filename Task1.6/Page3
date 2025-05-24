@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Phone Repair</title>
+        
+        <style>
+            body {
+                font-family: 'Arial';
+                font-size: 20px;
+            }
+
+            a {
+                color: black;
+            }
+
+            img, p {
+                border: 3px solid peru;
+            }
+
+            table {
+                background-color: LightYellow;
+                font-size: 20px;
+                text-align: center;
+                border: 1px solid peru;
+                border-collapse: collapse;
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            td, th {
+                border: 1px solid peru;
+                padding: 8px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h2 {
+                background: peru;
+                padding: 10px;
+
+            }
+
+            .gallery {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .gallery img {
+                margin: 0 10px;
+            }
+
+            .mid-image {
+                margin: auto;
+                display: block;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="#prices">Прайс-лист</a> 
+            <a href="#feedback">Отзывы</a> 
+            <a href="#image">Фотографии</a>
+        </nav>
+        <h1>Phone Repair</h1>
+        <div class="gallery">
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fzdesinstrument.ru%2Fwp-content%2Fuploads%2F2017%2F11%2FPayalnik-43-2.jpg&f=1&nofb=1&ipt=6fcfd863927f68a775d8e1d1db32826a5d71b4b2c64397179713c3010499ef7d" width="300" alt="Паяльник">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.vseinstrumenti.ru%2Fimages%2Fgoods%2Fruchnoj-instrument%2Fotvertki%2F6374503%2F1200x800%2F69836779.jpg&f=1&nofb=1&ipt=e8b8b4aa7b62b5e2911b90f8ccd65bf2cc2521fd3913df0c6ceb7efdca2103f6" width="300" height="300" alt="Отвёртка">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fst.depositphotos.com%2F2019955%2F2401%2Fi%2F450%2Fdepositphotos_24016017-stock-photo-isolated-woman-hand-holding-phone.jpg&f=1&nofb=1&ipt=133595e5c7272dc75a49224f7631d7d2e5ee89adb5c8b9c2a34ea40b89aece03" width="300" alt="Телефон">
+        </div>
+
+        <h2 id="prices">Услуги и цены</h2>
+
+        <table>
+            <tr>
+                <th>Название услуги</th>
+                    <th>Цена</th>
+                    <th>Срок выполнения</th>
+                </tr>
+                <tr>
+                    <td>Замена разъёма <br> зарядки</td>
+                    <td>750 руб.</td>
+                    <td>1 день</td>
+                </tr>
+                <tr>
+                    <td>Замена экрана</td>
+                    <td>от 1500 руб.</td>
+                    <td>от 2-х дней</td>
+                </tr>
+                <tr>
+                    <td>Перепрошивка</td>
+                    <td>от 1000 руб.</td>
+                    <td>1 день</td>
+                </tr>
+        </table>
+
+        <h2 id="feedback">Отзывы</h2>
+        <p><span style="font-style: italic;">Наталья:</span> Сломался разъём для зарядки в новом iPhone. Починили оперативно. Была в офисе на Ремонтной улице.</p>
+        <p><span style="font-style: italic;">Максим:</span> Нужно было срочно спасать телефон от вирусов. Думал всё — потеряю и данные и телефон. Спасибо ребятам на проспекте Прогресса — данные вытащили, телефон восстановили.</p>
+        <p><span style="font-style: italic;">Юля:</span> Разбила экран планшета и сразу побежала в мастерскую на Ремонтной улице. Правда экрана для моей модели не оказалось в наличии, но ребята сделали заказ и телефон получила через три дня.</p>
+
+        <h2 id="image">Фотографии</h2>
+        
+        <div class="gallery">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedicaltech.ru%2Fwp-content%2Fuploads%2F2022%2F09%2F140.jpg&f=1&nofb=1&ipt=0b7f1daef93c3c559caae903a7bf4ab16df024e5add20b6f8fafc2460f36efac" alt="Телефончик мастер" height="300">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp1.zoon.ru%2F2%2Fb%2F5ffe7c12f0c9f866681cceb2_603746284c19e.jpg&f=1&nofb=1&ipt=ca10e700e5ecf049310cbfdea857405418e63d40cb031a47cd51399f69e04071" alt="Телефончик мастер" height="300">
+        </div>
+        <img class="mid-image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffix-noutbuk.kh.ua%2Fwp-content%2Fuploads%2F2018%2F11%2Fremont-telefonov.jpg&f=1&nofb=1&ipt=1aed91de802812b05b1abab26e6280bb3f9f6c2d9a9d883337f418feca0cfb88" alt="Фото мастерской 3" height="300">
+    </body>
+
+</html>
