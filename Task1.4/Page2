@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Космический фотобанк</title>
+    </head>
+    <body>
+        <h1>Космический фотобанк</h1>
+        <p>Сюда я буду выкладывать красивые фотографии.</p>
+        <p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2293445.jpg&f=1&nofb=1&ipt=0f1c97f673be024f836fc026e24a1332e6f62b190861c31bc0ff8be1d715a120" style="width: 350px; height: 240px;">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ukri.org%2Fwp-content%2Fuploads%2F2022%2F02%2FSTFC-240222-SpaceGalaxyStars-GettyImages-1035676256.jpg&f=1&nofb=1&ipt=ec7272250324dbccbd5c71237810dea64540ae35e04fef71216daf903df1bff1" style="width: 400px; height: 240px;">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fx1075lasvegas.com%2Fwp-content%2Fuploads%2Fsites%2F116%2F2022%2F12%2FSpace-FI-1556-x-1176-ImResizer.jpg&f=1&nofb=1&ipt=b1d314c94256b65be7b7196caba8246083c1ac0697ba8f392341be5094a52437" style="width: 400px; height: 240px;">
+        </p>
+    </body>
+</html>
