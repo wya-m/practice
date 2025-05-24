@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Праздники народов мира</title>
+
+        <style>
+
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: green; 
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                height: 60px;
+            }
+
+            header img {
+                height: 50px;
+                margin-right: 15px;
+            }
+
+            body {
+                margin: 0;
+                padding-top: 80px;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            .table-container {
+                border-left: 10px dotted darkcyan;
+                border-right: 10px dotted darkcyan;
+                padding: 0 15px;
+                margin: 15px;
+            }
+            
+            table {
+                width: 100%;
+                border: 2px dotted darkcyan !important;
+                border-collapse: collapse;
+            }
+            
+            th, td {
+                border: 2px dotted darkcyan;
+                padding: 8px;
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="http://png.pngtree.com/png-clipart/20211128/original/pngtree-confetti-blast-vector-png-for-birthday-free-colorful-party-ribbon-explosion-png-image_6953529.png" alt="logo">
+        </header>
+
+        <h1>Праздники народов мира</h1>
+
+        <div class="table-container">
+            <table>
+
+                <tr>
+                    <th>Название праздника</th>
+                    <th><u>Праздник льда и снега</u> <img src="https://i.pinimg.com/originals/0f/93/a2/0f93a25e39aa0a31ff1883ee09159d1b.png" width="150"></th>
+                    <th><u>Фестиваль Ренессанса</u> <img src="https://sun9-77.userapi.com/impg/oCfULBig0D8KhHsdM-HCDKeOrPzFqBZ74Hr90A/G_TcQQMXeJs.jpg?size=319x604&quality=95&sign=985957a67f8efba38ef8bcb090fd3896&type=album" width="150"></th>
+                    <th><u>Цветение сакуры</u> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs0.rbk.ru%2Fv6_top_pics%2Fmedia%2Fimg%2F0%2F65%2F756788662807650.jpg&f=1&nofb=1&ipt=50fe18a98a8274121364e88df281a312cf6804e0ffa4210efbb438c1aa74d6bd" width="150"></th>
+                    <th><u>Фестиваль красок</u> <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foren.ru%2Fwp-content%2Fuploads%2F2018%2F05%2FFestival-krasok-Holi-v-Orenburge.jpg&f=1&nofb=1&ipt=59050fffd6bc809fa4f9afbdcac587793891ea3b63b26d5ba94959669891ac46" width="150"></th>
+                </tr>
+                
+                <tr>
+                    <td>Когда празднуется</td>
+                    <td>5 января - 5 февраля</td>
+                    <td>Вторая половина июля</td>
+                    <td>27 марта</td>
+                    <td>Конец февраля - начало марта</td>
+                </tr>
+
+                <tr>
+                    <td>Где празднуется</td>
+                    <td>Китай</td>
+                    <td>Испания</td>
+                    <td>Япония</td>
+                    <td>Индия</td>
+                </tr>
+
+            </table>
+
+        </div>
+        
+        <p style="color: green; background-color: #e6e6fa; padding: 20px;">Сайт Лёши Гончарова ©</p>
+
+    </body>
+
+</html>
