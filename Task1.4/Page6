@@ -1,0 +1,31 @@
+<html>
+
+    <head>
+        <title>Сравнение телефонов</title>
+    </head>
+
+    <body>
+
+        <h2>Сравнение телефонов</h2>
+
+        <table>
+            <tr>
+                <td>Производитель</td>
+                <td>Модель телефона</td>
+                <td>Процессор</td>
+            </tr>
+            <tr>
+                <td>Samsung</td>
+                <td>Galaxy S23</td>
+                <td>Snapdragon 8 Gen 2</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>iPhone 15 Pro</td>
+                <td>A17 Bionic</td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>
