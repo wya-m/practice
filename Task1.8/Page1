@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Блог Сани</title>
+
+        <style>
+            
+            body {
+                font-family: "Arial";
+            }
+            
+            a {
+                text-decoration: none;
+                border-radius: 10px;
+                padding: 10px;
+                border: 2px solid green;
+                margin: 190px;
+                text-align: center;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <h1>
+            Привет!<br>
+            Это блог Сани О.
+        </h1>
+        <a>Перейти к постам</a>
+    </body>
+
+</html>
