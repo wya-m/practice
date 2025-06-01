@@ -1,0 +1,226 @@
+<html>
+    <head>
+        <title>Travel Agency</title>
+
+        <style>
+            header {
+                background: linear-gradient(to right, lightblue 0%, white 50%, lightblue 100%);
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+                padding: 50px 0;
+            }
+
+            header h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            header::before {
+                content: "VN";
+                position: absolute;
+                font-size: 120px;
+                opacity: 0.3;
+                font-weight: bold;
+                color: #000;
+                top: 50%;
+                left: 30%;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            h2 {
+                color: #EB722E;
+                font-size: 25px;
+                margin: 30px 30px 10px 30px;
+            }
+
+            .primary-display-area {
+                display: flex;
+                margin: 0 30px;
+                flex-wrap: wrap;
+            }
+
+            .clip-gallery {
+                flex: 1;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                min-width: 0;
+            }
+
+            .media-player-shell {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                background: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                width: 100%;
+            }
+
+            .media-player-shell iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+            .auxiliary-info-box {
+                width: 200px;
+                margin-left: 30px;
+                padding: 20px;
+                border: 5px solid #2E268B;
+                border-radius: 10px;
+                background-color: white;
+                margin-top: 15px;
+            }
+
+            .auxiliary-info-box h3 {
+                font-family: Arial;
+                font-size: 25px;
+                margin: 0;
+                text-align: center;
+            }
+
+            .auxiliary-info-box a {
+                font-size: 20px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 8px;
+                margin-top: 60px;
+            }
+
+            .auxiliary-info-box a span {
+                border-bottom: 2px dotted blue;
+            }
+
+            .mini-clip-reel {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                margin: 0 30px 30px;
+            }
+
+            .mini-clip-reel .media-player-shell {
+                width: 300px;
+                height: 170px;
+                position: relative;
+                overflow: hidden;
+                background: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding-bottom: 0;
+            }
+
+            .mini-clip-reel .media-player-shell iframe {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: none;
+            }
+
+            .isolated-media-unit {
+                margin: 0 30px;
+            }
+
+            .isolated-media-unit .media-player-shell {
+                width: 300px;
+                height: 170px;
+                position: relative;
+                overflow: hidden;
+                background: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding-bottom: 0;
+                margin: 0;
+            }
+
+            .isolated-media-unit .media-player-shell iframe {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            footer {
+                margin: 30px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1>Travel Agency</h1>
+        </header>
+        <main>
+            <h2>Любите экскурсии?</h2>
+
+            <div class="primary-display-area">
+
+                <div class="clip-gallery">
+
+                    <div class="media-player-shell">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=-93426456&id=456239692&hd=2&autoplay=0"></iframe>
+                    </div>
+                    <div class="media-player-shell">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=-35694144&id=456239242&autoplay=0"></iframe>
+                    </div>
+                    <div class="media-player-shell">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=-228288570&id=456239065&autoplay=0"></iframe>
+                    </div>
+                    <div class="media-player-shell">
+                        <iframe src="https://vk.com/video_ext.php?oid=-164319282&id=456239025&autoplay=0"></iframe>
+                    </div>
+                </div>
+
+                <div class="auxiliary-info-box">
+                        <h3>Полезные</h3>
+                        <h3>ссылки</h3>
+                        <a href=""><span>Билеты</span></a>
+                        <a href=""><span>Отели</span></a>
+                        <a href=""><span>Чек-лист</span></a>
+                </div>
+            </div>
+
+            <h2>Хотите на море?</h2>
+            <div class="mini-clip-reel">
+                <div class="media-player-shell">
+                    <iframe src="https://vk.com/video_ext.php?oid=-167803767&id=456247412&autoplay=0"></iframe>
+                </div>
+                <div class="media-player-shell">
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-141656696&id=456239737&autoplay=0"></iframe>
+                </div>
+            </div>
+
+            <h2>Всего понемногу?</h2>
+            <div class="isolated-media-unit">
+                <div class="media-player-shell">
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-212467256&id=456239647&autoplay=0"></iframe>
+                </div>
+            </div>
+            <hr style="border: none; height: 5px; background-color: #2E671F; margin: 40px 0;">
+        </main>
+        <footer>
+            <h1>Напиши - получи скидку!</h1>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3938/3938067.png" alt="VK" width="100"></a>
+        </footer>
+    </body>
+</html>

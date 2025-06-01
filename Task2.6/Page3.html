@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Горные экскурсии</title>
+
+        <style>
+            
+            nav {
+                text-align: right;
+                padding-bottom: 25px;
+                border-bottom: 1px dashed black;
+                background: linear-gradient(to bottom, lightblue, white);
+            }
+
+            nav a {
+                margin: 10px;
+                text-decoration: none;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .text {
+                width: 300px;
+            }
+
+            .text p {
+                color: lightblue;
+                font-size: 35px;
+            }
+
+            .text em {
+                display: block;
+                text-align: right;
+            }
+
+            .text p:hover {
+                font-size: 45px;
+                color: navy;
+            }
+
+            .text .right:hover {
+                color: darkorange;
+            }
+
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                width: 500px;
+                gap: 0;
+            }
+
+            .image-wrapper {
+                width: 165px;
+                height: 250px;
+                position: relative;
+                overflow: visible;
+            }
+
+            .image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 0.5;
+                transition: all 0.5s ease-out;
+            }
+
+            .image-wrapper:hover img {
+                opacity: 1;
+                padding: 5px;
+                border: 6px solid navy;
+                z-index: 10;
+                background: white;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav>
+            <a href="#">Сезонные акции</a>
+            <a href="#">Контакты</a>
+        </nav>
+
+        <h1>Горные экскурсии</h1>
+        
+        <div class="container">
+            <div class="gallery">
+                <div class="image-wrapper">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.fishki.net%2Fupload%2Fpost%2F201604%2F13%2F1918064%2Fgor4.jpg&f=1&nofb=1&ipt=cdec753abcf9db307e25fcdef845ae5bce6afed15e60d4d7ff221ba0d04b64ef">
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcs9.pikabu.ru%2Fpost_img%2Fbig%2F2016%2F11%2F06%2F6%2F1478421455172179934.jpg&f=1&nofb=1&ipt=05bb48e0d06e3fa5ac8cbe85095dabc8a96de0d27c1b89b149094cb776a1bc41">
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhdfon.ru%2Fwp-content%2Fuploads%2Fhdfon.ru-414325162.jpg&f=1&nofb=1&ipt=9b5a00b99f45cc15098dcf3f5dcc5206bacf81a85332f43e0c3fa3419b32f052">
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fposibiri.ru%2Fwp-content%2Fuploads%2F2055%2F03%2F%25D0%2590%25D0%25BB%25D1%2582%25D0%25B0%25D0%25B9%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B5-%25D0%25B3%25D0%25BE%25D1%2580%25D1%258B.jpg&f=1&nofb=1&ipt=4933b9f60801fba607ab90a391d550bcfbd618ff8ec0f6c16401956059f777df">
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fhq-wallpapers.ru%2Fwallpapers%2F9%2Fhq-wallpapers_ru_nature_43672_1920x1080.jpg&f=1&nofb=1&ipt=5126a9d50e67347734541886d454fd653ead706e1420740ab243c8dda1d5ab59">
+                </div>
+                <div class="image-wrapper">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fabout-planet.ru%2Fimages%2Fasia%2Fpriroda%2Furalskie_gory%2Furalskie-gory.jpg&f=1&nofb=1&ipt=38bef54e77e544eab898dd039f7825372059d8c93fe861b0400dccc99b8dec25">
+                </div>
+            </div>
+            <div class="text">
+                <p>Только</p>
+                <p><em class="right">горы!</em></p>
+                <p>Только</p>
+                <p><em class="right">вперёд!</em></p>
+            </div>
+        </div>
+    </body>
+</html>
