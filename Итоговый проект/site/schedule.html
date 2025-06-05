@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание конкурсов | Моя семья – мой космос</title>
+    <style>
+        /* Общие стили для темной темы */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #0A0F14; 
+            color: #F0F0F0; 
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #4FD1C5; 
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Шапка сайта */
+        header {
+            background-color: #14191F; 
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); 
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4FD1C5; 
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #4FD1C5; 
+        }
+        
+        /* Основное содержимое */
+        .schedule-section {
+            padding: 60px 0;
+            min-height: calc(100vh - 150px);
+        }
+        
+        .schedule-container {
+            max-width: 100%;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+        
+        .schedule-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #F0F0F0; 
+        }
+        
+        .schedule-date {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #4FD1C5; 
+        }
+        
+        /* Таблица расписания */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        
+        .schedule-table th, 
+        .schedule-table td {
+            border: 1px solid #30363D; 
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .schedule-table th {
+            background-color: #14191F; 
+            color: #4FD1C5; 
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        
+        .schedule-table td {
+            background-color: #1F242A; 
+            height: 80px;
+            width: calc(100% / 13);
+        }
+        
+        .time-slot {
+            font-weight: bold;
+            color: #4FD1C5; 
+        }
+        
+        .competition-cell {
+            position: relative;
+            padding: 0;
+            vertical-align: middle;
+        }
+        
+        .competition-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 5px;
+        }
+        
+        .competition-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .places-available {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto;
+        }
+        
+        .places-available.free {
+            background-color: #28A745;
+            color: #FFFFFF;
+        }
+        
+        .places-available.low {
+            background-color: #FFC107;
+            color: #212529;
+        }
+        
+        .places-available.full {
+            background-color: #DC3545;
+            color: #FFFFFF;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        
+        .legend-color.free {
+            background-color: #28A745;
+        }
+        
+        .legend-color.low {
+            background-color: #FFC107;
+        }
+        
+        .legend-color.full {
+            background-color: #DC3545;
+        }
+        
+        /* Подвал сайта */
+        footer {
+            background-color: #0A0F14; 
+            padding: 40px 0 20px;
+            color: #A0AEC0; 
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .footer-logo-text {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4FD1C5; 
+        }
+        
+        .footer-contact {
+            margin-bottom: 15px;
+        }
+        
+        .footer-contact a {
+            color: #A0AEC0; 
+            transition: color 0.3s;
+        }
+        
+        .footer-contact a:hover {
+            color: #4FD1C5; 
+        }
+        
+        .footer-links h3 {
+            color: #F0F0F0; 
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #A0AEC0; 
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #4FD1C5; 
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #30363D; 
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 992px) {
+            .schedule-table {
+                font-size: 14px;
+            }
+            
+            .competition-name {
+                font-size: 12px;
+            }
+            
+            .places-available {
+                width: 25px;
+                height: 25px;
+                font-size: 12px;
+            }
+            
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .schedule-table th, 
+            .schedule-table td {
+                padding: 8px 4px;
+            }
+            
+            .time-slot {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .menu-toggle {
+                display: block;
+                background: none;
+                border: none;
+                color: #4FD1C5; 
+                font-size: 24px;
+                cursor: pointer;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .schedule-table {
+                font-size: 12px;
+            }
+            
+            .competition-name {
+                display: none;
+            }
+            
+            .schedule-title {
+                font-size: 28px;
+            }
+            
+            .schedule-date {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://cdn-icons-png.flaticon.com/128/12251/12251658.png" alt="Логотип 'Моя семья – мой космос'">
+                    <span class="logo-text">Моя семья – мой космос</span>
+                </div>
+                <nav>
+                    <button class="menu-toggle" style="display: none;">☰</button>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="competition.html">Конкурсы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <section class="schedule-section">
+        <div class="container">
+            <div class="schedule-container">
+                <h1 class="schedule-title">Расписание конкурсов</h1>
+                <div class="schedule-date">15 сентября 2024 года</div>
+                
+                <!-- Легенда -->
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color free"></div>
+                        <span>Много свободных мест</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color low"></div>
+                        <span>Мало свободных мест</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color full"></div>
+                        <span>Мест нет</span>
+                    </div>
+                </div>
+                
+                <!-- Таблица расписания -->
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>9:00-10:00</th>
+                            <th>10:00-11:00</th>
+                            <th>11:00-12:00</th>
+                            <th>12:00-13:00</th>
+                            <th>13:00-14:00</th>
+                            <th>14:00-15:00</th>
+                            <th>15:00-16:00</th>
+                            <th>16:00-17:00</th>
+                            <th>17:00-18:00</th>
+                            <th>18:00-19:00</th>
+                            <th>19:00-20:00</th>
+                            <th>20:00-21:00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="time-slot">Эко-Мастерская</td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Эко-Мастерская</div>
+                                    <div class="places-available free">15</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Эко-Мастерская</div>
+                                    <div class="places-available free">10</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">Кулинарные Традиции</td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Кулинарные Традиции</div>
+                                    <div class="places-available low">4</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Кулинарные Традиции</div>
+                                    <div class="places-available free">12</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">Семейный Фотоальбом</td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Семейный Фотоальбом</div>
+                                    <div class="places-available full">0</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Семейный Фотоальбом</div>
+                                    <div class="places-available low">1</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">Юные Изобретатели</td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Юные Изобретатели</div>
+                                    <div class="places-available free">8</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Юные Изобретатели</div>
+                                    <div class="places-available free">6</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                        </tr>
+                        <tr>
+                            <td class="time-slot">Литературный Клуб</td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Литературный Клуб</div>
+                                    <div class="places-available free">10</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Литературный Клуб</div>
+                                    <div class="places-available low">3</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                        </tr>
+                         <tr>
+                            <td class="time-slot">Сад на Подоконнике</td>
+                            <td class="competition-cell">
+                                <div class="competition-info">
+                                    <div class="competition-name">Сад на Подоконнике</div>
+                                    <div class="places-available free">7</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell">
+                                 <div class="competition-info">
+                                    <div class="competition-name">Сад на Подоконнике</div>
+                                    <div class="places-available low">2</div>
+                                </div>
+                            </td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                            <td class="competition-cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://cdn-icons-png.flaticon.com/128/12251/12251658.png" alt="Логотип 'Моя семья – мой космос'">
+                        <span class="footer-logo-text">Моя семья – мой космос</span>
+                    </div>
+                    <div class="footer-contact">
+                        Телефон: <a href="tel:+74842234567">+7 (4842) 23-45-67</a>
+                    </div>
+                    <div class="footer-contact">
+                        Email: <a href="mailto:family@cosmos.ru">info@familyhorizons.ru</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="registration.html">Регистрация</a></li>
+                        <li><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Конкурсы</h3>
+                    <ul>
+                        <li><a href="schedule.html">Расписание</a></li>
+                        <li><a href="competition.html">Описание конкурсов</a></li>
+                        <li><a href="404.html">Страница не найдена</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 "Моя семья – мой космос". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
